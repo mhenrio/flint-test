@@ -1,0 +1,80 @@
+<div class = "container">
+  <div class="logo_flint">
+    <img src="" alt="">
+  </div>
+  <div class="white_box">
+    <div class="white_box_content">
+      <div class="title_and_price">
+        <h1>Abonnement Pro</h1>
+        <p>-</p>
+        <div class="suscription_price">
+          <h2>34€ HT</h2>
+          <p>/mois</p>
+        </div>
+      </div>
+      <div class="suscription_infos">
+        <p>- Forfait de base pour 1 utilisateur.</p>
+        <p>- + 15€ TTC / utilisateur supplémentaire.</p>
+        <p>- Possibilité d’annuler l’abonnement à tout moment</p>
+      </div>
+      <div class="email_name_inputs">
+        <label for="email">Adresse email</label>
+        <input type="text" id="email" name="email" placeholder="@example.com">
+        <label for="team_name">Nom de l'équipe</label>
+        <input type="text" id="team_name" name="team_name" placeholder="">
+      </div>
+      <h2>Méthode de paiement</h2>
+      <div class="tabs">
+         <ul class="nav nav-tabs mb-3" id="pills-tab" role="tablist">
+          <li class="nav-item">
+            <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Prélèvement</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Carte bancaire</a>
+          </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+          <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="prelevement_infos">
+              <label for="name">Nom et Prénom</label>
+              <input type="text" id="name" name="name" placeholder="">
+              <label for="iban">IBAN</label>
+              <input type="text" id="iban" name="iban" placeholder="123456660">
+            </div>
+          </div>
+          <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+            <div class="credit_card">
+              <label for="fname">Cartes acceptées</label>
+              <div class="icon-container">
+                <i class="fab fa-cc-visa" style="color:navy;"></i>
+                <i class="fab fa-cc-amex" style="color:blue;"></i>
+                <i class="fab fa-cc-mastercard" style="color:red;"></i>
+              </div>
+              <div class="credit_card_infos">
+                <label for="cname">Nom sur la carte</label>
+                <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+                <label for="ccnum">Numéro</label>
+                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                <label for="expmonth">Mois d'exp</label>
+                <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                <label for="expyear">Année d'exp</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="terms">
+        <label>
+          <input type="checkbox" checked="checked" name="terms"> Je reconnais avoir lu et accepte les conditions générales de vente.
+        </label>
+      </div>
+      <input type="submit" value="Valider" class="btn">
+      <div class="stripe_logo">
+        <img src="" alt="">
+      </div>
+    </div>
+  </div>
+</div>
