@@ -1,23 +1,23 @@
 <div class = "container">
-  <div class="logo_flint">
+  <div class="flint-logo">
     <%= image_tag("logo_flint.png", size: "70x60", alt: "Logo Flint", loading:"lazy") %>
   </div>
-  <div class="white_box">
-    <div class="white_box_content">
-      <div class="title_and_price">
+  <div class="white-box">
+    <div class="white-box-content">
+      <div class="title-and-price">
         <h1>Abonnement Pro</h1>
         <p>---</p>
-        <div class="suscription_price">
+        <div class="suscription-price">
           <h2>34€ HT</h2>
           <p>/mois</p>
         </div>
       </div>
-      <div class="suscription_infos">
+      <div class="suscription-infos">
         <li> Forfait de base pour 1 utilisateur.</li>
         <li> + 15€ TTC / utilisateur supplémentaire.</li>
-        <li> Possibilité d’annuler l’abonnement à tout moment</li>
+        <li> Possibilité d’annuler l’abonnement à tout moment.</li>
       </div>
-      <div class="email_name_inputs">
+      <div class="email-name-inputs">
         <label for="email">Adresse email</label>
         <input type="text" id="email" name="email" placeholder="">
         <label for="team_name">Nom de l'équipe</label>
@@ -35,7 +35,7 @@
         </ul>
         <div class="tab-content" id="pills-tabContent">
           <div class="tab-pane fade show active" id="pills-iban" role="tabpanel" aria-labelledby="pills-iban-tab">
-            <div class="prelevement_infos">
+            <div class="prelevement-infos">
               <p>Tu n’auras pas de prélèvement le 1er mois.</p>
               <label for="name">Nom et Prénom</label>
               <input type="text" id="name" name="name" placeholder="">
@@ -44,14 +44,14 @@
             </div>
           </div>
           <div class="tab-pane fade" id="pills-card" role="tabpanel" aria-labelledby="pills-card-tab">
-            <div class="credit_card">
-              <label for="fname">Cartes acceptées</label>
+            <div class="credit-card">
+              <p>Cartes acceptées</p>
               <div class="icon-container">
                 <i class="fab fa-cc-visa" style="color:navy;"></i>
                 <i class="fab fa-cc-amex" style="color:blue;"></i>
                 <i class="fab fa-cc-mastercard" style="color:red;"></i>
               </div>
-              <div class="credit_card_infos">
+              <div class="credit-card-infos">
                 <label for="cname">Nom sur la carte</label>
                 <input type="text" id="cname" name="cardname" placeholder="">
                 <label for="ccnum">Numéro</label>
@@ -96,8 +96,8 @@
         </label>
       </div>
       <input type="submit" value="Valider" class="btn">
-      <div class="stripe_logo">
-        <%= image_tag("powered_by_stripe.png", size: "30x20", alt: "Logo Flint", loading:"lazy") %>
+      <div class="stripe-logo">
+        <%= image_tag("powered_by_stripe.png", size: "70x25", alt: "Logo Flint", loading:"lazy") %>
       </div>
     </div>
   </div>

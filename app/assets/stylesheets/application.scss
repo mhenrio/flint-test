@@ -1,4 +1,5 @@
 // Graphical variables
+@import "colors";
 
 // External libraries
 @import "bootstrap/scss/bootstrap";
@@ -9,39 +10,39 @@
 
 
 body {
-  background-color: #163358; // dark blue
+  background-color: $dark-blue;
 
 }
 
 h1 {
   font-size: 32px;
-  color: #1684A3; // blue
+  color: $blue;
   margin-bottom: 0;
 }
 
 h2 {
   font-size: 24px;
-  color: #1684A3; // blue
+  color: $blue;
   margin-bottom: 0;
 }
 
 h3 {
   font-size: 22px;
-  color: #1684A3; // blue
+  color: $blue;
 }
 
 h5 {
   font-size: 18px;
-  color: #1684A3; // blue
+  color: $blue;
 }
 
 p, li {
   font-size: 15px;
-  color: #959899; // grey
+  color: $gray;
 }
 
 label{
-  color: #1684A3;
+  color: $blue;
 }
 
 
@@ -49,30 +50,31 @@ label{
 @media (max-width: 720px) {
   h1 {
     font-size: 28px;
-    color: #1684A3; // blue
+    color: $blue;
     margin-bottom: 0;
   }
 
   h2 {
     font-size: 20px;
-    color: #1684A3; // blue
+    color: $blue;
     margin-bottom: 0;
   }
 
   h3 {
     font-size: 18px;
-    color: #1684A3; // blue
+    color: $blue;
   }
 
   h5 {
     font-size: 18px;
-    color: #1684A3; // blue
+    color: $blue;
   }
 
   p, li {
     font-size: 14px;
-    color: #959899; // grey
+    color: $gray;
   }
+
   label{
     font-size: 15px;
   }

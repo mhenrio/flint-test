@@ -1,15 +1,15 @@
-.logo_flint{
+.flint-logo{
   text-align: center;
   padding: 20px;
 }
 
-.white_box{
-  background-color: #FAFAFA;
+.white-box{
+  background-color: $white;
   border-radius: 15px;
   max-width: 500px;
   margin-left: auto;
   margin-right: auto;
-  .white_box_content{
+  .white-box-content{
     margin-right: auto;
     margin-left: auto;
     padding-top: 20px;
@@ -18,37 +18,37 @@
       margin-top: 10px;
     }
     input {
-      height: 41px;
+      height: 40px;
     }
-    .title_and_price{
+    .title-and-price{
       text-align: center;
       p{
         margin-bottom: 0;
-        color: #1684A3;
+        color: $blue;
       }
     }
-    .suscription_price{
+    .suscription-price{
       display: inline-flex;
       align-items: center;
       margin-bottom: 20px;
       p{
-        color: #1684A3;
+        color: $blue;
         margin-bottom: 0;
       }
     }
-    .suscription_infos{
+    .suscription-infos{
       margin-bottom: 20px;
       li{
         list-style: none;
       }
       li::before {
         content: "\2713";
-        color: #959899;
+        color: $gray;
       }
     }
-    .email_name_inputs{
+    .email-name-inputs{
       display: inline-grid;
-      width: 400px;
+      width: -webkit-fill-available;
     }
     h3 {
       margin-top: 20px;
@@ -56,50 +56,49 @@
     }
     .tabs {
       #label-cvv{
-          margin-left: 55px;
-        }
+        margin-left: 55px;
+      }
       .nav{
         width: fit-content;
         margin-left: auto;
         margin-right: auto;
       }
-      .prelevement_infos, .credit_card_infos{
+      .prelevement-infos, .credit-card-infos{
         display: inline-grid;
-        width: 400px;
+        width: -webkit-fill-available;
       }
-      .prelevement_infos{
-        width: 400px;
+      .prelevement-infos{
+        width: -webkit-fill-available;
       }
-      .credit_card{
+      .credit-card{
         .fab{
           font-size: 30px;
         }
       }
-      .credit_card_infos{
+
       #expireMM, #expireYY {
         height: 40px;
-        color: #959899;
+        color: $gray;
       }
-    }
       .nav-tabs .nav-link.active, .nav-tabs .nav-item.show .nav-link {
-        background-color: #1684A3;
+        background-color: $blue;
         color: white;
       }
       .nav-tabs .nav-link {
-        border: 1px solid #1684A3;
+        border: 1px solid $blue;
         border-top-left-radius: 0.25rem;
         border-top-right-radius: 0.25rem;
-        color: #1684A3;
+        color: $blue;
       }
       .nav-tabs {
         border-bottom: 0;
       }
     }
     .btn {
-      background-color: #1684A3;
+      background-color: $blue;
       border-radius: 5px;
       color: white;
-      width: 400px;
+      width: -webkit-fill-available;
       margin-top: 20px;
     }
     .terms{
@@ -108,66 +107,43 @@
         height: 12px;
       }
     }
-    .stripe_logo{
+    .stripe-logo{
       width: fit-content;
       margin-right: auto;
       margin-left: auto;
       position: relative;
-      bottom: -12px;
+      bottom: -13px;
     }
   }
 }
 
-@media(min-width: 1460px) {
-
-}
-
-//**Ipad paysage (1024) + ipad pro portrait (1024) + macbook 13 (1024)
-@media (min-width: 1024px) and (max-width: 1450px) {
-
-}
-
 //**Ipad portrait
 @media (min-width: 760px) and (max-width: 1000px) {
-  .white_box{
-    .white_box_content{
+  .white-box{
+    .white-box-content{
       width: 85%;
-      .btn{
-        width: 401px;
-      }
-      .email_name_inputs{
-        width: 401px;
-      }
-      .tabs{
-        .prelevement_infos, .credit_card_infos{
-          width: 401px;
-        }
-      }
     }
   }
 }
 
 //**iphone 6/7/8 et 6/7/8 plus & iphone X
 @media (max-width: 720px) {
-  .white_box{
+  .white-box{
     max-width: 320px;
-    .white_box_content{
-      width: 85%;
-      .btn{
-        width: 269px;
-      }
-      .email_name_inputs{
-        width: 269px;
-      }
+    .white-box-content{
+      width: 90%;
       .tabs{
+        .credit-card-infos p{
+          font-size: 15px
+        }
         #cvv{
-          width: 89px;
+          width: 60px;
+        }
+        #expireMM{
+          width: 90px;
         }
         #label-cvv{
-          margin-left: 59px;
-        }
-        .prelevement_infos, .credit_card_infos{
-          width: 269px;
+          margin-left: 62px;
         }
       }
     }
@@ -176,22 +152,13 @@
 
 //**iphone 5&SE
 @media (max-width: 320px) {
-  .white_box{
+  .white-box{
     max-width: 320px;
-    .white_box_content{
+    .white-box-content{
       width: 85%;
-      .btn{
-        width: 247px;
-      }
-      .email_name_inputs{
-        width: 247px;
-      }
       .tabs{
         #cvv{
           width: 67px;
-        }
-        .prelevement_infos, .credit_card_infos{
-          width: 247px;
         }
       }
     }
