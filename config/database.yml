@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: flint-test_production
-  username: flint-test
-  password: <%= ENV['FLINT-TEST_DATABASE_PASSWORD'] %>
+  url: <%= ENV['POSTGRESQL_ADDON_URI'] %>
