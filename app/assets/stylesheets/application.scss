@@ -16,10 +16,17 @@ body {
 h1 {
   font-size: 32px;
   color: #1684A3; // blue
+  margin-bottom: 0;
 }
 
 h2 {
   font-size: 24px;
+  color: #1684A3; // blue
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 22px;
   color: #1684A3; // blue
 }
 
@@ -28,7 +35,7 @@ h5 {
   color: #1684A3; // blue
 }
 
-p {
+p, li {
   font-size: 15px;
   color: #959899; // grey
 }
@@ -36,3 +43,39 @@ p {
 label{
   color: #1684A3;
 }
+
+
+//**iphone 6/7/8 et 6/7/8 plus & iphone X
+@media (max-width: 720px) {
+  h1 {
+    font-size: 28px;
+    color: #1684A3; // blue
+    margin-bottom: 0;
+  }
+
+  h2 {
+    font-size: 20px;
+    color: #1684A3; // blue
+    margin-bottom: 0;
+  }
+
+  h3 {
+    font-size: 18px;
+    color: #1684A3; // blue
+  }
+
+  h5 {
+    font-size: 18px;
+    color: #1684A3; // blue
+  }
+
+  p, li {
+    font-size: 14px;
+    color: #959899; // grey
+  }
+  label{
+    font-size: 15px;
+  }
+}
+
+
