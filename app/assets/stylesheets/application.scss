@@ -1,0 +1,38 @@
+// Graphical variables
+
+// External libraries
+@import "bootstrap/scss/bootstrap";
+
+// My Files
+@import "home";
+
+
+
+body {
+  background-color: #163358; // dark blue
+
+}
+
+h1 {
+  font-size: 32px;
+  color: #1684A3; // blue
+}
+
+h2 {
+  font-size: 24px;
+  color: #1684A3; // blue
+}
+
+h5 {
+  font-size: 18px;
+  color: #1684A3; // blue
+}
+
+p {
+  font-size: 15px;
+  color: #959899; // grey
+}
+
+label{
+  color: #1684A3;
+}
